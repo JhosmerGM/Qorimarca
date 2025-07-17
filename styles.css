@@ -55,13 +55,13 @@ a {
   color: #333;
 }
 
-.seccion:nth-child(odd) {
+/* .seccion:nth-child(odd) {
   background: linear-gradient(135deg, #fcefee 0%, #fef9f9 100%);
-}
+} */
 
-.seccion:nth-child(even) {
+/* .seccion:nth-child(even) {
   background: linear-gradient(135deg, #edf2fb 0%, #e3f2fd 100%);
-}
+} */
 
 .seccion h2 {
   font-size: 2.4rem;
