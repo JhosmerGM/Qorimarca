@@ -66,3 +66,28 @@ const hotelesSwiper = new Swiper(".hotelesSwiper", {
   }
 });
 
+// Función para mostrar mensaje y limpiar formulario
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formulario-contacto");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Detiene envío por defecto
+
+      const nombre = form.nombre.value.trim();
+      const correo = form.correo.value.trim();
+      const mensaje = form.mensaje.value.trim();
+
+      if (!nombre || !correo || !mensaje) {
+        alert("⚠️ Por favor completa todos los campos.");
+        return;
+      }
+
+      // Mostrar mensaje de éxito
+      alert("✅ ¡Tu mensaje ha sido enviado correctamente!");
+
+      // Limpiar formulario
+      form.reset();
+    });
+  }
+});

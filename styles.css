@@ -97,7 +97,7 @@ a {
 .card {
   border: none;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -106,6 +106,64 @@ a {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
+
+/* ---------- TARJETAS HISTORIA UNIFORMES ---------- */
+
+/* Asegura que todas las tarjetas tengan la misma altura general 
+   y estructura vertical consistente */
+.historia-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Todas las imágenes de las tarjetas tendrán la misma altura.
+   object-fit: cover evita deformaciones y recorta la imagen si es necesario
+   para que se ajuste al espacio sin perder proporción */
+.historia-card img {
+  height: 350px; /* Puedes ajustar este valor según tu diseño */
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Distribuye el contenido de la tarjeta para que el texto y el botón
+   estén bien posicionados aunque el texto sea más largo o más corto.
+   Esto mantiene la alineación entre tarjetas */
+.historia-card .card-body {
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Separa texto del botón */
+}
+
+/* ---------- TARJETAS CULTURA UNIFORMES ---------- */
+
+/* Establece una estructura de tarjeta uniforme */
+.cultura-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Igualar tamaño de imagenes */
+.cultura-card img {
+  height: 500px; /* Puedes ajustar la altura si lo deseas */
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Alinear texto y botón en la parte baja */
+.cultura-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 /* ---------- BOTONES VIBRANTES ---------- */
 .btn-primary {
@@ -123,7 +181,23 @@ a {
 .btn {
   border-radius: 30px;
   transition: all 0.3s ease;
+  background-color: #ffffff;
 }
+
+
+/* ---------- BOTONES VIBRANTES 2---------- */
+.btn-primary-2 {
+  background: linear-gradient(to right, #91cf70, #95f461);
+  border: none;
+  color: #0400ff;
+}
+
+.btn-primary-2:hover {
+  background: linear-gradient(to right, #78dc0e, #3cdc1c);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transform: scale(1.05);
+}
+
 
 /* ---------- MODAL SEMITRANSPARENTE ---------- */
 .modal-content {
@@ -204,4 +278,160 @@ footer .social-icons i:hover {
   /* margin-bottom: 10px; */
  margin-left: auto;
  margin-right: auto;
+}
+
+/* Fondo con transparencia y desenfoque */
+.header {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+
+/* Botón flotante animado de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px 25px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px #25d366;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ---------- TARJETAS GASTRONOMÍA UNIFORMES ---------- */
+.gastro-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagen uniforme para todos los platos */
+.gastro-card img {
+  height: 300px; /* Ajusta si prefieres más o menos alto */
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Acomoda el contenido para que se vea bien alineado */
+.gastro-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/* ===== SECCIÓN DE CONTACTO V2 ===== */
+.contact-section-v2 {
+  background: linear-gradient(to right, #fdfdfd, #f7f9fb);
+}
+
+.info-box {
+  border: 1px solid #e2e2e2;
+  background-color: #ffffff;
+}
+
+.form-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+}
+
+.contact-v2-input,
+.contact-v2-textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.contact-v2-input:focus,
+.contact-v2-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.btn-contact-v2 {
+  background: linear-gradient(to right, #ff6f61, #f4a261);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-contact-v2:hover {
+  background: linear-gradient(to right, #f4a261, #ff6f61);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
+
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+/* ===== CONTACTO INFO CARDS ESTILOS v2 ===== */
+.info-box-v2 {
+  background: linear-gradient(to bottom right, #ffffff, #f3f7ff);
+  border: 1px solid #dce3ec;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.info-card-v2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card-v2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
 }
