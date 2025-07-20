@@ -149,7 +149,7 @@ a {
 
 /* Igualar tamaño de imagenes */
 .cultura-card img {
-  height: 500px; /* Puedes ajustar la altura si lo deseas */
+  height: 250px; /* Puedes ajustar la altura si lo deseas */
   object-fit: cover;
   width: 100%;
   border-top-left-radius: 20px;
