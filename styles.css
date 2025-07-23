@@ -438,6 +438,178 @@ footer .social-icons i:hover {
 
 
 
+/* 🎨 CONTENEDOR PRINCIPAL DEL POPUP */
+.popup-container {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 330px;
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  padding: 20px 22px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  display: none;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+}
 
+/* 🟢 ESTADO VISIBLE */
+.popup-container.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+
+/* ❌ BOTÓN DE CIERRE */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.popup-close:hover {
+  color: #ff0000;
+}
+
+/* 🖼️ IMAGEN EN LA PARTE SUPERIOR */
+.popup-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔠 TÍTULO CON ÍCONO */
+.popup-content h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #0f0550;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(to right, #ff8c00, #ffb347); 
+  -webkit-text-fill-color: text;
+}
+
+/* 📃 TEXTO DEL POPUP */
+.popup-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 10px 0 18px 0;
+}
+.popup-content p i {
+  color: #ff8c00;
+  margin-right: 6px;
+}
+
+/* 🔘 BOTÓN A FACEBOOK */
+.popup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #1877F2;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 3px 12px rgba(24, 119, 242, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.popup-btn:hover {
+  background-color: #0e63d4;
+  transform: scale(1.03);
+}
+
+
+
+
+
+/* 🔵 ESTILOS PARA LA TOPBAR */
+/* .topbar {
+  background-color: #000000;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.topbar-left span {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+} */
+
+/* .topbar-right a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff20;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.topbar-right a:hover {
+  background-color: #ff8c00; 
+  color: #fff;
+} */
+
+/* 🔁 RESPONSIVE PARA MÓVIL */
+/* @media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topbar-left,
+  .topbar-right {
+    width: 100%;
+  }
+
+  .topbar-right {
+    text-align: left;
+    margin-top: 5px;
+  }
+} */
+/* 💡 Asegura que el topbar esté fijo y visible encima del header */
+/* .topbar {
+  position: relative;
+  z-index: 1031; 
+}
+
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1040;
+}
+
+.header.fixed-top {
+  top: 40px; 
+} */
 
 

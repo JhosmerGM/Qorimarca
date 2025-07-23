@@ -6,28 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Q’orimarca Web</title>
 
-  <!-- Bootstrap -->
+  <!-- ✅ Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome -->
+  <!-- ✅ Font Awesome (SOLO una vez, versión 6.5.0) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Swiper.js -->
+  <!-- ✅ Animate.css (opcional para animaciones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- ✅ Swiper.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!-- AOS -->
+  <!-- ✅ AOS (animaciones al hacer scroll) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-  <!-- Estilos personalizados -->
+  <!-- ✅ Tus estilos personalizados -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
 </head>
+
+<!-- 🌟 POPUP PERSONALIZADO CON IMAGEN, TEXTO Y BOTÓN -->
+<div id="popupOferta" class="popup-container">
+  <div class="popup-content">
+
+    <!-- ❌ BOTÓN DE CIERRE -->
+    <span class="popup-close" onclick="cerrarPopup()">×</span>
+
+    <!-- 🖼️ IMAGEN DEL ANUNCIO -->
+    <img src="img/publicidad02.jpg" alt="oferta" class="popup-img">
+
+    <!-- 🔔 TÍTULO CON ÍCONO -->
+    <h3><i class="fas fa-gift"></i> ¡Bienvenido a Q’orimarca!</h3>
+
+    <!-- 📣 MENSAJE DE ANUNCIO -->
+    <p><i class="fas fa-bullhorn"></i> Conoce nuestras costumbres y eventos únicos.<br>
+      ¡Síguenos en Facebook para no perderte nada!</p>
+
+    <!-- 📲 BOTÓN QUE LLEVA A FACEBOOK -->
+    <a href="https://www.facebook.com/profile.php?id=61578766763788" target="_blank" class="popup-btn">
+      <i class="fab fa-facebook-square"></i> Ir a Facebook
+    </a>
+  </div>
+</div>
+
 
 
 
@@ -59,6 +83,24 @@
       </div>
     </nav>
   </header> -->
+
+  <!-- 🔝 BARRA SUPERIOR DE CONTACTO -->
+  <!-- <div class="topbar">
+    <div class="topbar-left">
+      <span><i class="fas fa-map-marker-alt"></i> Bambamarca - Perú</span>
+      <span><i class="fas fa-phone-alt"></i> +51 999 999 999</span>
+      <span><i class="fas fa-envelope"></i> Qorimcarca.com</span>
+    </div>
+    <div class="topbar-right">
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div> -->
+
+
+
   <!-- ENCABEZADO -->
   <header class="header fixed-top" id="mainHeader">
     <nav class="navbar navbar-expand-lg navbar-dark container">
@@ -103,6 +145,7 @@
   </header>
 
 
+
   <!-- SECCIÓN HISTORIA -->
   <section id="historia" class="seccion historia-section py-5 mt-5">
     <div class="container">
@@ -113,7 +156,8 @@
             <img src="img/hechoshistoricos.jpeg" class="card-img-top" alt="Historia 3">
             <div class="card-body">
               <h5 class="card-title"><strong>Hechos históricos</strong></h5>
-              <p class="card-text">La llegada de los españoles marcó una fusión cultural presente en su arquitectura y lengua.</p>
+              <p class="card-text">La llegada de los españoles marcó una fusión cultural presente en su arquitectura y
+                lengua.</p>
               <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
                 data-bs-target="#modalHistoria3">Leer más</button>
             </div>
@@ -124,7 +168,8 @@
             <img src="img/img001.jpg" class="card-img-top" alt="Historia 1">
             <div class="card-body">
               <h5 class="card-title"><strong>Bambamarca</strong></h5>
-              <p class="card-text">Es la capital del distrito de Bambamarca, en la provincia de Hualgayoc. Es cuna de la cultura Q’ori-marca y tiene una población aproximada de 60000 habitantes... </p>
+              <p class="card-text">Es la capital del distrito de Bambamarca, en la provincia de Hualgayoc. Es cuna de la
+                cultura Q’ori-marca y tiene una población aproximada de 60000 habitantes... </p>
               <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
                 data-bs-target="#modalHistoria1">Leer más</button>
             </div>
@@ -135,7 +180,8 @@
             <img src="img/ubicación.JPG" class="card-img-top" alt="Historia 2">
             <div class="card-body">
               <h5 class="card-title"><strong>Ubicación</strong></h5>
-              <p class="card-text">El distrito de Bambamarca se encuentra en la provincia de Hualgayoc, departamento de Cajamarca...</p>
+              <p class="card-text">El distrito de Bambamarca se encuentra en la provincia de Hualgayoc, departamento de
+                Cajamarca...</p>
               <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
                 data-bs-target="#modalHistoria2">Leer más</button>
             </div>
@@ -159,7 +205,7 @@
         <div class="modal-body">
           <p>Es la capital del distrito de Bambamarca, en la provincia de Hualgayoc. Es cuna de la cultura Q’orimarca y
             tiene una población aproximada de 60000 habitantes, de los cuales el 80% pertenecen a la zona rural.
-            Bambamarca tiene una extensión de  451.38 km² y una altitud de 2532 m.s.n.m. (Plaza de Armas).</p>
+            Bambamarca tiene una extensión de 451.38 km² y una altitud de 2532 m.s.n.m. (Plaza de Armas).</p>
           <p>
             <strong>ETIMOLOGÍA:</strong>
             Bambamarca es una palabra aymara que significa "Pueblo en llanura". Su nombre en la época pre-inca,
@@ -183,11 +229,14 @@
         </div>
         <div class="modal-body">
           <p><strong>Bambamarca: Ubicación, Población y Territorio</strong></p>
-          <p><strong>Ubicación:</strong> El distrito de Bambamarca se encuentra en el norte de Perú, en el departamento de Cajamarca,
+          <p><strong>Ubicación:</strong> El distrito de Bambamarca se encuentra en el norte de Perú, en el departamento
+            de Cajamarca,
             siendo la capital de la provincia de Hualgayoc. Se sitúa a una altitud de 2532 m s. n. m.</p>
-          <p><strong>Población:</strong> Las últimas estimaciones indican una población de alrededor de 60,000 habitantes, con la mayoría
+          <p><strong>Población:</strong> Las últimas estimaciones indican una población de alrededor de 60,000
+            habitantes, con la mayoría
             residiendo en zonas rurales.</p>
-          <p><strong>Territorio:</strong>Abarca una superficie de 451.38 km², representando el 58.03% del territorio provincial de
+          <p><strong>Territorio:</strong>Abarca una superficie de 451.38 km², representando el 58.03% del territorio
+            provincial de
             Hualgayoc.</p>
         </div>
       </div>
@@ -205,11 +254,13 @@
           <img src="img/hechoshistori.jpg" class="card-img-top" alt="Historia 2">
         </div>
         <div class="modal-body">
-          <p> <strong>Fundación Española (1783):</strong> La ciudad de Bambamarca fue fundada por el obispo de Trujillo, Baltazar Jaime
+          <p> <strong>Fundación Española (1783):</strong> La ciudad de Bambamarca fue fundada por el obispo de Trujillo,
+            Baltazar Jaime
             Martínez de Compañón y Bujanda, un hito que consolidó la presencia colonial y la evangelización en la zona,
             influyendo en la estructura social y religiosa del lugar.</p>
 
-          <p><strong>Creación como Distrito (1857) y Capital Provincial (1950):</strong> Estos momentos políticos significaron un
+          <p><strong>Creación como Distrito (1857) y Capital Provincial (1950):</strong> Estos momentos políticos
+            significaron un
             reconocimiento y fortalecimiento de la identidad de Bambamarca, propiciando su desarrollo y consolidando su
             rol como centro de la provincia de Hualgayoc, lo que a su vez impactó en la organización social y en la
             relevancia de sus eventos comunitarios.</p>
@@ -239,7 +290,8 @@
             <img src="img/pecuaria.jpg" class="card-img-top" alt="Pecuaria">
             <div class="card-body">
               <h5 class="card-title"><strong>Pecuaria</strong></h5>
-              <p class="card-text">Cada domingo, la Plaza Pecuaria de Bambamarca se convierte en el corazón del comercio local.</p>
+              <p class="card-text">Cada domingo, la Plaza Pecuaria de Bambamarca se convierte en el corazón del comercio
+                local.</p>
               <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCulturaPecuaria">Leer
                 más</button>
             </div>
@@ -253,7 +305,8 @@
             <img src="img/pararaico.jpg" class="card-img-top" alt="Pararaico">
             <div class="card-body">
               <h5 class="card-title"><strong>Pararaico</strong></h5>
-              <p class="card-text">Consiste en invitar a las amistades para bailar, comer y tomar licor por la alegría que se siente de tener casa propia</p>
+              <p class="card-text">Consiste en invitar a las amistades para bailar, comer y tomar licor por la alegría
+                que se siente de tener casa propia</p>
               <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalCulturaPararaico">Leer
                 más</button>
             </div>
@@ -295,7 +348,7 @@
 
 
   <!-- Modales Cultura -->
-  
+
   <div class="modal fade" id="modalCulturaPecuaria" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content bg-white backdrop-blur">
@@ -306,14 +359,20 @@
         <div class="modal-body">
           <img src="img/pecuaria.jpg" class="card-img-top" alt="">
           <p>
-             <strong>Comercio dominical en la Plaza Pecuaria</strong>
+            <strong>Comercio dominical en la Plaza Pecuaria</strong>
           </p>
-          <p> Cada domingo, la Plaza Pecuaria de Bambamarca se convierte en el corazón del comercio local. Desde muy temprano, comuneros de los caseríos, agricultores, ganaderos y comerciantes llegan con productos frescos como frutas, verduras, granos, quesos, carnes y animales vivos como vacunos, ovejas y cuyes. Esta feria no solo es un punto de intercambio económico, sino también un espacio cultural y social donde las personas se saludan, conversan y fortalecen lazos comunitarios. Aquí se mezclan voces en quechua y castellano, trajes típicos, productos artesanales y comidas tradicionales, convirtiendo la plaza en un mosaico vivo de la cultura bambamarquina.</p>
+          <p> Cada domingo, la Plaza Pecuaria de Bambamarca se convierte en el corazón del comercio local. Desde muy
+            temprano, comuneros de los caseríos, agricultores, ganaderos y comerciantes llegan con productos frescos
+            como frutas, verduras, granos, quesos, carnes y animales vivos como vacunos, ovejas y cuyes. Esta feria no
+            solo es un punto de intercambio económico, sino también un espacio cultural y social donde las personas se
+            saludan, conversan y fortalecen lazos comunitarios. Aquí se mezclan voces en quechua y castellano, trajes
+            típicos, productos artesanales y comidas tradicionales, convirtiendo la plaza en un mosaico vivo de la
+            cultura bambamarquina.</p>
         </div>
       </div>
     </div>
   </div>
-    <div class="modal fade" id="modalCulturaPararaico" tabindex="-1">
+  <div class="modal fade" id="modalCulturaPararaico" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content bg-white backdrop-blur">
         <div class="modal-header border-0">
@@ -323,9 +382,11 @@
         <div class="modal-body">
           <img src="img/pararaico.jpg" class="card-img-top" alt="">
           <p>
-             <strong>Pararaico</strong>
+            <strong>Pararaico</strong>
           </p>
-          <p>Es la celebración de gratitud a Dios al construir una casa, principalmente, pero también al renovarla. Se realiza cuando se concluye con el techado. Participan con el dueño o los dueños, los trabajadores que hicieron la obra, los padrinos y aquellos invitados especiales del propietario.</p>
+          <p>Es la celebración de gratitud a Dios al construir una casa, principalmente, pero también al renovarla. Se
+            realiza cuando se concluye con el techado. Participan con el dueño o los dueños, los trabajadores que
+            hicieron la obra, los padrinos y aquellos invitados especiales del propietario.</p>
         </div>
       </div>
     </div>
@@ -382,6 +443,9 @@
 
 
 
+
+
+
   <!-- SECCIÓN TURISMO -->
   <section id="turismo" class="seccion turismo-section py-5 mt-5">
     <div class="container">
@@ -427,6 +491,50 @@
               <p class="card-text"> Estas ventanillas constituyen uno de los conjuntos más numerosos de nichos
                 funerarios de la época pre inca</p>
               <button class="btn btn-primary-2 btn-sm" data-bs-toggle="modal" data-bs-target="#modalTurismo3">Leer
+                más</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="turismo-card card h-100  shadow overflow-hidden position-relative">
+            <div class="bg-img"></div>
+            <img src="img/bombom03.jpg" class="card-img-top" alt="">
+            <div class="card-body position-relative">
+              <h5 class="card-title"><strong>Cañon del Bombom</strong></h5>
+              <p class="card-text">El Cañón del Bombón es una joya natural ubicada en el distrito de Bambamarca, que
+                sorprende por sus imponentes formaciones rocosas, cascadas y paisajes de ensueño. </p>
+              <button class="btn btn-primary-2 btn-sm" data-bs-toggle="modal" data-bs-target="#modalTurismobombom">Leer
+                más</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="turismo-card card h-100  shadow overflow-hidden position-relative">
+            <img src="img/grutas01.jpg" class="card-img-top" alt="">
+            <div class="card-body position-relative">
+              <h5 class="card-title"><Strong>Grutas de Atoshaico</Strong></h5>
+              <p class="card-text">Las Grutas de Atoshaico son un impresionante sistema de cuevas ubicado en el caserío
+                del mismo nombre, a pocos kilómetros del centro de Bambamarca.</p>
+              <button class="btn btn-primary-2 btn-sm" data-bs-toggle="modal" data-bs-target="#modalTurismoGrutas">Leer
+                más</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="turismo-card card h-100 shadow overflow-hidden position-relative">
+            <img src="img/capilla01.jpg" class="card-img-top" alt="">
+            <div class="card-body position-relative">
+              <h5 class="card-title"><Strong>Capilla de Chulipampa</Strong></h5>
+              <p class="card-text"> La Capilla de Chulipampa, ubicada en una colina del caserío del mismo nombre, es un
+                espacio de recogimiento espiritual rodeado de paisajes impresionantes. Construida con arquitectura
+                sencilla y tradicional...</p>
+              <button class="btn btn-primary-2 btn-sm" data-bs-toggle="modal" data-bs-target="#modalTurismoCapilla">Leer
                 más</button>
             </div>
           </div>
@@ -505,417 +613,481 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
+
+    <div class="modal fade" id="modalTurismobombom" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Cañon del Bombom</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bombom02.jpg" class="card-img-top" alt="">
+            <p> El Cañón del Bombón es una joya natural ubicada en el distrito de Bambamarca, que sorprende por sus imponentes formaciones rocosas, cascadas y paisajes de ensueño. Tallado por siglos por el río Bombón, este cañón ofrece una experiencia única para los amantes del ecoturismo, la fotografía de paisajes y el senderismo. En sus alrededores habita una flora y fauna diversa, y es posible observar aves andinas, orquídeas silvestres y bosques de queñuales. Además, está rodeado de leyendas que hablan de espíritus protectores y rutas sagradas, lo que convierte al cañón en un lugar no solo natural, sino también místico y ancestral. Es ideal para quienes buscan aventura y conexión con la tierra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTurismoGrutas" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Grutas de Atoshaico</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/grtutas02.jpg" class="card-img-top" alt="">
+            <p>Las Grutas de Atoshaico son un impresionante sistema de cuevas ubicado en el caserío del mismo nombre, a pocos kilómetros del centro de Bambamarca. Estas formaciones subterráneas han sido moldeadas por la acción del agua durante miles de años, y en su interior albergan estalactitas, estalagmitas y pasadizos de roca que despiertan la imaginación. Además del atractivo geológico, muchas personas creen que estas grutas tienen una conexión espiritual, y algunos relatos orales mencionan que eran utilizadas como refugio por antiguos pobladores. La experiencia de recorrerlas es emocionante y un poco misteriosa, por lo que se recomienda hacerlo con guías locales. Sin duda, es un destino ideal para los amantes de la naturaleza y el turismo de aventura</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTurismoCapilla" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Caoilla de Chulipampa</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/capilla02.jpg" class="card-img-top" alt="">
+            <p> La Capilla de Chulipampa, ubicada en una colina del caserío del mismo nombre, es un espacio de recogimiento espiritual rodeado de paisajes impresionantes. Construida con arquitectura sencilla y tradicional, esta capilla es visitada tanto por fieles como por turistas que buscan disfrutar de la paz del lugar y de la espectacular vista panorámica que ofrece. Desde allí se puede contemplar parte del valle y montañas que rodean Bambamarca. La capilla es también escenario de celebraciones religiosas importantes para la comunidad, lo que le da un valor cultural y espiritual especial. Es un lugar perfecto para quienes buscan tranquilidad, historia local y contacto con la naturaleza.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
+    <!-- SECCIÓN HOTELES -->
+    <section id="hoteles" class="seccion hoteles-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-dark" data-aos="zoom-in">Hoteles Recomendados</h2>
+        <div class="swiper hotelesSwiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
 
-  <!-- SECCIÓN HOTELES -->
-  <section id="hoteles" class="seccion hoteles-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 text-dark" data-aos="zoom-in">Hoteles Recomendados</h2>
-      <div class="swiper hotelesSwiper" data-aos="fade-up">
-        <div class="swiper-wrapper">
+            <!-- Hotel 1 -->
+            <div class="swiper-slide">
+              <div class="card hotel-card shadow-sm">
+                <img src="img/hotel1.jpg" class="card-img-top" alt="Hotel 1">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Q’orimara Palace</h5>
+                  <p class="card-text">
+                    <i class="fas fa-map-marker-alt"></i> Calle Principal 123<br />
+                    <i class="fas fa-star text-warning"></i> 4.5 estrellas
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#modalHotel1">Ver
+                    más</button>
+                </div>
+              </div>
+            </div>
 
-          <!-- Hotel 1 -->
-          <div class="swiper-slide">
-            <div class="card hotel-card shadow-sm">
-              <img src="img/hotel1.jpg" class="card-img-top" alt="Hotel 1">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Q’orimara Palace</h5>
-                <p class="card-text">
-                  <i class="fas fa-map-marker-alt"></i> Calle Principal 123<br />
-                  <i class="fas fa-star text-warning"></i> 4.5 estrellas
-                </p>
-                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalHotel1">Ver
-                  más</button>
+            <!-- Hotel 2 -->
+            <div class="swiper-slide">
+              <div class="card hotel-card shadow-sm">
+                <img src="img/hotel4.jpg" class="card-img-top" alt="Hotel 2">
+                <div class="card-body">
+                  <h5 class="card-title">Eco Lodge Andino</h5>
+                  <p class="card-text">
+                    <i class="fas fa-map-marker-alt"></i> Av. Cordillera S/N<br />
+                    <i class="fas fa-star text-warning"></i> 4 estrellas
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#modalHotel2">Ver
+                    más</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="swiper-slide">
+              <div class="card hotel-card shadow-sm">
+                <img src="img/hotel3.jpg" class="card-img-top" alt="Hotel 3">
+                <div class="card-body">
+                  <h5 class="card-title">Hospedaje Rústico Inti</h5>
+                  <p class="card-text">
+                    <i class="fas fa-map-marker-alt"></i> Jr. Sol Naciente 45<br />
+                    <i class="fas fa-star text-warning"></i> 3.5 estrellas
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#modalHotel3">Ver
+                    más</button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Hotel 2 -->
-          <div class="swiper-slide">
-            <div class="card hotel-card shadow-sm">
-              <img src="img/hotel4.jpg" class="card-img-top" alt="Hotel 2">
-              <div class="card-body">
-                <h5 class="card-title">Eco Lodge Andino</h5>
-                <p class="card-text">
-                  <i class="fas fa-map-marker-alt"></i> Av. Cordillera S/N<br />
-                  <i class="fas fa-star text-warning"></i> 4 estrellas
-                </p>
-                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalHotel2">Ver
-                  más</button>
-              </div>
-            </div>
+    <!-- Modales -->
+    <div class="modal fade" id="modalHotel1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Hotel Q’orimara Palace</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
-          <!-- Hotel 3 -->
-          <div class="swiper-slide">
-            <div class="card hotel-card shadow-sm">
-              <img src="img/hotel3.jpg" class="card-img-top" alt="Hotel 3">
-              <div class="card-body">
-                <h5 class="card-title">Hospedaje Rústico Inti</h5>
-                <p class="card-text">
-                  <i class="fas fa-map-marker-alt"></i> Jr. Sol Naciente 45<br />
-                  <i class="fas fa-star text-warning"></i> 3.5 estrellas
-                </p>
-                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalHotel3">Ver
-                  más</button>
-              </div>
-            </div>
+          <div class="modal-body">
+            <img src="img/hotel1.jpg" class="card-img-top" alt="">
+            <p>El **Hotel Q’orimara Palace** es un establecimiento de 4.5 estrellas ubicado en la **Calle Principal
+              123**.
+              Ofrece una experiencia de lujo con habitaciones amplias y modernas, equipadas para su confort. Cuenta con
+              televisor, escritorio y mobiliario de alta calidad, diseñado para una estancia placentera. Es ideal para
+              quienes buscan comodidad y un servicio superior.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Modales -->
-  <div class="modal fade" id="modalHotel1" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Hotel Q’orimara Palace</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-
-        <div class="modal-body">
-          <img src="img/hotel1.jpg" class="card-img-top" alt="">
-          <p>El **Hotel Q’orimara Palace** es un establecimiento de 4.5 estrellas ubicado en la **Calle Principal 123**.
-            Ofrece una experiencia de lujo con habitaciones amplias y modernas, equipadas para su confort. Cuenta con
-            televisor, escritorio y mobiliario de alta calidad, diseñado para una estancia placentera. Es ideal para
-            quienes buscan comodidad y un servicio superior.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalHotel2" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Eco Lodge Andino</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hotel4.jpg" class="card-img-top" alt="">
-          <p>El **Eco Lodge Andino**, clasificado con 4 estrellas y ubicado en **Av. Cordillera S/N**, ofrece un diseño
-            contemporáneo y vistas impresionantes. Este lodge se distingue por su ambiente espacioso y relajante, con
-            cómodas camas y amplias áreas de estar, perfectas para desconectar y disfrutar de la tranquilidad andina.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalHotel3" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Hospedaje Rústico Inti</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/hotel3.jpg" class="card-img-top" alt="">
-          <p>El **Hospedaje Rústico Inti**, con una calificación de 3.5 estrellas y situado en **Jr. Sol Naciente 45**,
-            ofrece un encanto particular y un ambiente acogedor. Se caracteriza por su decoración clásica con toques de
-            arte local, brindando una experiencia cálida y hogareña para sus huéspedes, ideal para quienes buscan una
-            estancia auténtica.</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- SECCIÓN GASTRONOMÍA -->
-  <section id="gastronomia" class="seccion gastronomia-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 text-dark" data-aos="zoom-in">Gastronomía</h2>
-      <div class="row g-4">
-
-        <!-- Plato 1 -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card gastro-card shadow-sm">
-            <img src="img/caldoverde.jpg" class="card-img-top" alt="Plato típico">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-utensils text-danger me-2"></i><strong>Caldo Verde</strong></h5>
-              <p class="card-text">El Caldo Verde es un reconfortante y nutritivo estandarte de la cocina cajamarquina,
-                ideal para los días frescos de la sierra.</p>
-              <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro1">Leer
-                más</button>
-            </div>
+    <div class="modal fade" id="modalHotel2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Eco Lodge Andino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-        </div>
-
-        <!-- Plato 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card gastro-card shadow-sm">
-            <img src="img/humitas.jpg" class="card-img-top" alt="Comida">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-pepper-hot text-danger me-2"></i><strong>Humitas y tamales</strong></h5>
-              <p class="card-text">Los Tamales y Humitas son dos pilares dulces y salados de la cocina local, ambos
-                elaborados a base de maíz. Los Tamales son preparaciones sustanciosas de masa de maíz rellenas con queso
-              </p>
-              <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro2">Leer
-                más</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Plato 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card gastro-card shadow-sm">
-            <img src="img/cuy.jpg" class="card-img-top" alt="Comida 3">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-drumstick-bite text-danger me-2"></i><strong>Cuy frito</strong></h5>
-              <p class="card-text">El Cuy Frito es un plato emblemático y esencial de la gastronomía andina, donde el
-                cuy se sazona meticulosamente y se fríe hasta alcanzar una textura crujiente por fuera y tierna por
-                dentro.</p>
-              <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro3">Leer
-                más</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Modales Gastronomía -->
-  <div class="modal fade" id="modalGastro1" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Caldo verde</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/caldoverde.jpg" class="card-img-top" alt="Plato típico">
-          <p>El **Caldo Verde** es un emblema de la calidez y el sabor de la cocina cajamarquina, un plato reconfortante
-            que abraza el paladar con su frescura y sus propiedades nutritivas, especialmente apreciado en los días
-            frescos de la sierra. Su distintivo color y aroma provienen de una base excepcional de **hierbas andinas
-            frescas**, seleccionadas con esmero, como el paico, la ruda, el perejil y la hierbabuena, que no solo le dan
-            su tonalidad esmeralda, sino también un perfil aromático único y revitalizante.</p>
-
-          <p>Más allá de las hierbas, este caldo incorpora ingredientes sencillos pero esenciales: trozos de **papa**
-            que aportan consistencia y energía, y abundante **queso fresco desmenuzado**, que se funde ligeramente,
-            enriqueciendo el caldo con su sabor lácteo y textura suave. Frecuentemente, se corona con un huevo
-            escalfado, sumando proteínas y una presentación apetitosa. Es una opción ligera y digestiva, pero a la vez
-            increíblemente satisfactoria.</p>
-
-          <p>Ideal para un desayuno revitalizante o un almuerzo ligero, el Caldo Verde no es solo una sopa; es una
-            tradición que nutre el cuerpo y el alma, y es un reflejo de la pureza y riqueza de los ingredientes que la
-            tierra cajamarquina ofrece. Es un verdadero abrazo líquido que invita a ser disfrutado en cualquier momento.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalGastro2" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Humitas y tamales</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/humitas.jpg" class="card-img-top" alt="Plato típico">
-          <p>Los Tamales y Humitas son dos pilares fundamentales y versátiles de la gastronomía cajamarquina, ambos
-            elaborados magistralmente a partir del maíz, un ingrediente sagrado en la cultura andina. Aunque comparten
-            la base de maíz y el método de cocción al vapor en hojas, ofrecen experiencias gustativas distintas,
-            satisfaciendo tanto el paladar salado como el dulce.</p>
-
-          <p>Los **Tamales** son envoltorios sustanciosos de masa de maíz molido, rellenos con una combinación sabrosa
-            de carne (tradicionalmente cerdo o pollo), trozos de huevo duro, aceitunas y un toque de ají para realzar el
-            sabor. Envueltos cuidadosamente en hojas de plátano, se cocinan al vapor hasta alcanzar una consistencia
-            firme y un sabor profundo, ideales para un desayuno contundente o una merienda energizante.</p>
-
-          <p>Por otro lado, las **Humitas** presentan una versión más suave y aromática. Se preparan con maíz fresco
-            rallado, mezclado con queso fresco y, en su versión dulce más popular, pasas y un toque de azúcar, envueltas
-            directamente en las propias hojas de la mazorca de maíz. Al cocinarse al vapor, adquieren una textura
-            cremosa y un aroma delicioso que las hace perfectas para acompañar el café de la tarde o como un postre
-            ligero. Ambas preparaciones son un testimonio de la creatividad y el aprovechamiento del maíz en la cocina
-            regional.</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalGastro3" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Cuy frito</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/cuy.jpg" class="card-img-top" alt="Plato típico">
-          <p>El Cuy Frito es una joya culinaria de la sierra peruana y un plato inconfundible de la gastronomía
-            cajamarquina. Este manjar ancestral no solo es un alimento, sino una verdadera tradición que se ha
-            transmitido de generación en generación, representando la riqueza de los Andes. La preparación comienza con
-            la selección cuidadosa del cuy, que es sazonado con esmero para realzar su sabor natural antes de ser frito
-            a la perfección.</p>
-
-          <p>El secreto reside en lograr una piel crujiente y dorada, que contrasta deliciosamente con la carne tierna y
-            jugosa en su interior. Se sirve clásicamente acompañado de papas doradas o sancochadas, que absorben los
-            sabores del cuy y complementan su textura. El toque final lo aporta una porción generosa de arroz, una
-            ensalada que suele ser de cebolla y tomate que añade un picor característico y vibrante, elevando la
-            experiencia gustativa a otro nivel.</p>
-
-          <p>Probar el cuy frito es sumergirse en la cultura y el corazón de Cajamarca. Es un plato que invita a la
-            celebración y a compartir, ideal para aquellos que buscan una auténtica experiencia gastronómica andina y
-            desean conectar con las raíces culinarias de la región.</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- SECCION TRANSPORTE -->
-  <section id="transporte" class="seccion transporte-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 text-dark" data-aos="fade-down">Medios de Transporte</h2>
-      <div class="row g-4">
-
-        <!-- Transporte 1 -->
-        <div class="col-md-4" data-aos="fade-right">
-          <div class="card transporte-card text-center p-4 shadow-sm">
-            <i class="fas fa-bus fa-3x text-primary mb-3"></i>
-            <h5 class="card-title">Empresa de Transporte</h5>
-            <p class="card-text">Son las que conectan a la ciudad de Bambamarca con las otras provincias de Cajamarca.
+          <div class="modal-body">
+            <img src="img/hotel4.jpg" class="card-img-top" alt="">
+            <p>El **Eco Lodge Andino**, clasificado con 4 estrellas y ubicado en **Av. Cordillera S/N**, ofrece un
+              diseño
+              contemporáneo y vistas impresionantes. Este lodge se distingue por su ambiente espacioso y relajante, con
+              cómodas camas y amplias áreas de estar, perfectas para desconectar y disfrutar de la tranquilidad andina.
             </p>
-            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalBus">Leer
-              más</button>
+
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Transporte 2 -->
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card transporte-card text-center p-4 shadow-sm">
-            <i class="fas fa-plane fa-3x text-danger mb-3"></i>
-            <h5 class="card-title">Transporte 2</h5>
-            <p class="card-text">Proximanete, sección en mantenimiento por el momento</p>
-            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalAvion">Leer
-              más</button>
+    <div class="modal fade" id="modalHotel3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Hospedaje Rústico Inti</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/hotel3.jpg" class="card-img-top" alt="">
+            <p>El **Hospedaje Rústico Inti**, con una calificación de 3.5 estrellas y situado en **Jr. Sol Naciente
+              45**,
+              ofrece un encanto particular y un ambiente acogedor. Se caracteriza por su decoración clásica con toques
+              de
+              arte local, brindando una experiencia cálida y hogareña para sus huéspedes, ideal para quienes buscan una
+              estancia auténtica.</p>
+
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Transporte 3 -->
-        <div class="col-md-4" data-aos="fade-left">
-          <div class="card transporte-card text-center p-4 shadow-sm">
-            <i class="fas fa-taxi fa-3x text-warning mb-3"></i>
-            <h5 class="card-title">Taxis y Mototaxis</h5>
-            <p class="card-text">Ideales para movilizarse dentro de la ciudad y conocer lugares cercanos.</p>
-            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalTaxi">Leer
-              más</button>
+
+
+    <!-- SECCIÓN GASTRONOMÍA -->
+    <section id="gastronomia" class="seccion gastronomia-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-dark" data-aos="zoom-in">Gastronomía</h2>
+        <div class="row g-4">
+
+          <!-- Plato 1 -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card gastro-card shadow-sm">
+              <img src="img/caldoverde.jpg" class="card-img-top" alt="Plato típico">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-utensils text-danger me-2"></i><strong>Caldo Verde</strong></h5>
+                <p class="card-text">El Caldo Verde es un reconfortante y nutritivo estandarte de la cocina
+                  cajamarquina,
+                  ideal para los días frescos de la sierra.</p>
+                <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro1">Leer
+                  más</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plato 2 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card gastro-card shadow-sm">
+              <img src="img/humitas.jpg" class="card-img-top" alt="Comida">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-pepper-hot text-danger me-2"></i><strong>Humitas y
+                    tamales</strong></h5>
+                <p class="card-text">Los Tamales y Humitas son dos pilares dulces y salados de la cocina local, ambos
+                  elaborados a base de maíz. Los Tamales son preparaciones sustanciosas de masa de maíz rellenas con
+                  queso
+                </p>
+                <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro2">Leer
+                  más</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plato 3 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card gastro-card shadow-sm">
+              <img src="img/cuy.jpg" class="card-img-top" alt="Comida 3">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-drumstick-bite text-danger me-2"></i><strong>Cuy frito</strong>
+                </h5>
+                <p class="card-text">El Cuy Frito es un plato emblemático y esencial de la gastronomía andina, donde el
+                  cuy se sazona meticulosamente y se fríe hasta alcanzar una textura crujiente por fuera y tierna por
+                  dentro.</p>
+                <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalGastro3">Leer
+                  más</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modales Gastronomía -->
+    <div class="modal fade" id="modalGastro1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Caldo verde</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/caldoverde.jpg" class="card-img-top" alt="Plato típico">
+            <p>El **Caldo Verde** es un emblema de la calidez y el sabor de la cocina cajamarquina, un plato
+              reconfortante
+              que abraza el paladar con su frescura y sus propiedades nutritivas, especialmente apreciado en los días
+              frescos de la sierra. Su distintivo color y aroma provienen de una base excepcional de **hierbas andinas
+              frescas**, seleccionadas con esmero, como el paico, la ruda, el perejil y la hierbabuena, que no solo le
+              dan
+              su tonalidad esmeralda, sino también un perfil aromático único y revitalizante.</p>
+
+            <p>Más allá de las hierbas, este caldo incorpora ingredientes sencillos pero esenciales: trozos de **papa**
+              que aportan consistencia y energía, y abundante **queso fresco desmenuzado**, que se funde ligeramente,
+              enriqueciendo el caldo con su sabor lácteo y textura suave. Frecuentemente, se corona con un huevo
+              escalfado, sumando proteínas y una presentación apetitosa. Es una opción ligera y digestiva, pero a la vez
+              increíblemente satisfactoria.</p>
+
+            <p>Ideal para un desayuno revitalizante o un almuerzo ligero, el Caldo Verde no es solo una sopa; es una
+              tradición que nutre el cuerpo y el alma, y es un reflejo de la pureza y riqueza de los ingredientes que la
+              tierra cajamarquina ofrece. Es un verdadero abrazo líquido que invita a ser disfrutado en cualquier
+              momento.
+            </p>
+
           </div>
         </div>
-
       </div>
     </div>
-  </section>
 
-  <!-- Modales Transporte -->
-  <div class="modal fade" id="modalBus" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Autobuses Regionales</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Empresas de transporte terrestre ofrecen rutas diarias desde Cajamarca, Trujillo o Chiclayo hacia Q’orimara.
-          Comodidad y seguridad garantizadas.
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="modal fade" id="modalGastro2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Humitas y tamales</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/humitas.jpg" class="card-img-top" alt="Plato típico">
+            <p>Los Tamales y Humitas son dos pilares fundamentales y versátiles de la gastronomía cajamarquina, ambos
+              elaborados magistralmente a partir del maíz, un ingrediente sagrado en la cultura andina. Aunque comparten
+              la base de maíz y el método de cocción al vapor en hojas, ofrecen experiencias gustativas distintas,
+              satisfaciendo tanto el paladar salado como el dulce.</p>
 
-  <div class="modal fade" id="modalAvion" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Vuelos Locales</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Puedes llegar a Cajamarca o Chiclayo en avión desde Lima y tomar un transporte terrestre a Q’orimara. Las
-          aerolíneas suelen operar vuelos diarios.
-        </div>
-      </div>
-    </div>
-  </div>
+            <p>Los **Tamales** son envoltorios sustanciosos de masa de maíz molido, rellenos con una combinación sabrosa
+              de carne (tradicionalmente cerdo o pollo), trozos de huevo duro, aceitunas y un toque de ají para realzar
+              el
+              sabor. Envueltos cuidadosamente en hojas de plátano, se cocinan al vapor hasta alcanzar una consistencia
+              firme y un sabor profundo, ideales para un desayuno contundente o una merienda energizante.</p>
 
-  <div class="modal fade" id="modalTaxi" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-white backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Taxis y Mototaxis</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Dentro del distrito puedes desplazarte fácilmente en mototaxi o taxi. Son económicos y están disponibles en
-          todo momento.
+            <p>Por otro lado, las **Humitas** presentan una versión más suave y aromática. Se preparan con maíz fresco
+              rallado, mezclado con queso fresco y, en su versión dulce más popular, pasas y un toque de azúcar,
+              envueltas
+              directamente en las propias hojas de la mazorca de maíz. Al cocinarse al vapor, adquieren una textura
+              cremosa y un aroma delicioso que las hace perfectas para acompañar el café de la tarde o como un postre
+              ligero. Ambas preparaciones son un testimonio de la creatividad y el aprovechamiento del maíz en la cocina
+              regional.</p>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="modal fade" id="modalGastro3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Cuy frito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/cuy.jpg" class="card-img-top" alt="Plato típico">
+            <p>El Cuy Frito es una joya culinaria de la sierra peruana y un plato inconfundible de la gastronomía
+              cajamarquina. Este manjar ancestral no solo es un alimento, sino una verdadera tradición que se ha
+              transmitido de generación en generación, representando la riqueza de los Andes. La preparación comienza
+              con
+              la selección cuidadosa del cuy, que es sazonado con esmero para realzar su sabor natural antes de ser
+              frito
+              a la perfección.</p>
+
+            <p>El secreto reside en lograr una piel crujiente y dorada, que contrasta deliciosamente con la carne tierna
+              y
+              jugosa en su interior. Se sirve clásicamente acompañado de papas doradas o sancochadas, que absorben los
+              sabores del cuy y complementan su textura. El toque final lo aporta una porción generosa de arroz, una
+              ensalada que suele ser de cebolla y tomate que añade un picor característico y vibrante, elevando la
+              experiencia gustativa a otro nivel.</p>
+
+            <p>Probar el cuy frito es sumergirse en la cultura y el corazón de Cajamarca. Es un plato que invita a la
+              celebración y a compartir, ideal para aquellos que buscan una auténtica experiencia gastronómica andina y
+              desean conectar con las raíces culinarias de la región.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECCION TRANSPORTE -->
+    <section id="transporte" class="seccion transporte-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-dark" data-aos="fade-down">Medios de Transporte</h2>
+        <div class="row g-4">
+
+          <!-- Transporte 1 -->
+          <div class="col-md-4" data-aos="fade-right">
+            <div class="card transporte-card text-center p-4 shadow-sm">
+              <i class="fas fa-bus fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Empresa de Transporte</h5>
+              <p class="card-text">Son las que conectan a la ciudad de Bambamarca con las otras provincias de Cajamarca.
+              </p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalBus">Leer
+                más</button>
+            </div>
+          </div>
+
+          <!-- Transporte 2 -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card transporte-card text-center p-4 shadow-sm">
+              <i class="fas fa-plane fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">Transporte Privado</h5>
+              <p class="card-text">Existen empresas de transporte que cubren ciertos lugares turísticos, se puede contratar a estas empresas</p>
+              <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalAvion">Leer
+                más</button>
+            </div>
+          </div>
+
+          <!-- Transporte 3 -->
+          <div class="col-md-4" data-aos="fade-left">
+            <div class="card transporte-card text-center p-4 shadow-sm">
+              <i class="fas fa-taxi fa-3x text-warning mb-3"></i>
+              <h5 class="card-title">Mototaxis</h5>
+              <p class="card-text">Ideales para movilizarse dentro de la ciudad y conocer lugares cercanos.</p>
+              <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalTaxi">Leer
+                más</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modales Transporte -->
+    <div class="modal fade" id="modalBus" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Autobuses Regionales</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Empresas de transporte terrestre ofrecen rutas diarias desde Cajamarca, Trujillo o Chiclayo hacia Q’orimara.
+            Comodidad y seguridad garantizadas.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAvion" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Vuelos Locales</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Puedes llegar a Cajamarca o Chiclayo en avión desde Lima y tomar un transporte terrestre a Q’orimara. Las
+            aerolíneas suelen operar vuelos diarios.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalTaxi" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Taxis y Mototaxis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Dentro del distrito puedes desplazarte fácilmente en mototaxi o taxi. Son económicos y están disponibles en
+            todo momento.
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
-  <section id="nosotros" class="seccion sobre-nosotros-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 " data-aos="fade-up">Sobre Nosotros</h2>
-      <div class="row g-4">
+    <section id="nosotros" class="seccion sobre-nosotros-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 " data-aos="fade-up">Sobre Nosotros</h2>
+        <div class="row g-4">
 
-        <!-- Misión -->
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card sobre-card text-center p-4 shadow">
-            <i class="fas fa-bullseye fa-3x text-danger mb-3"></i>
-            <h5 class="card-title">Nuestra Misión</h5>
-            <p class="card-text">Promover el desarrollo turístico, cultural y social de la ciudad de Bambamarca a travéz
-              de Q’orimarca.</p>
-            <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalMision">Leer
+          <!-- Misión -->
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card sobre-card text-center p-4 shadow">
+              <i class="fas fa-bullseye fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">Nuestra Misión</h5>
+              <p class="card-text">Promover el desarrollo turístico, cultural y social de la ciudad de Bambamarca a
+                travéz
+                de Q’orimarca.</p>
+              <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalMision">Leer
               más</button> -->
+            </div>
           </div>
-        </div>
 
-        <!-- Visión -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card sobre-card text-center p-4 shadow">
-            <i class="fas fa-eye fa-3x text-warning mb-3"></i>
-            <h5 class="card-title">Nuestra Visión</h5>
-            <p class="card-text">Ser reconocidos como un destino cultural y turístico de excelencia en el Perú.</p>
-            <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalVision">Leer
+          <!-- Visión -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card sobre-card text-center p-4 shadow">
+              <i class="fas fa-eye fa-3x text-warning mb-3"></i>
+              <h5 class="card-title">Nuestra Visión</h5>
+              <p class="card-text">Ser reconocidos como un destino cultural y turístico de excelencia en el Perú.</p>
+              <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalVision">Leer
               más</button> -->
+            </div>
           </div>
-        </div>
 
-        <!-- Valores -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card sobre-card text-center p-4 shadow">
-            <i class="fas fa-heart fa-3x text-success mb-3"></i>
-            <h5 class="card-title">Nuestros Valores</h5>
-            <p class="card-text">Respeto, identidad, compromiso, innovación y sostenibilidad.</p>
-            <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalValores">Leer
+          <!-- Valores -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card sobre-card text-center p-4 shadow">
+              <i class="fas fa-heart fa-3x text-success mb-3"></i>
+              <h5 class="card-title">Nuestros Valores</h5>
+              <p class="card-text">Respeto, identidad, compromiso, innovación y sostenibilidad.</p>
+              <!-- <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalValores">Leer
               más</button> -->
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Modales Sobre Nosotros -->
-  <!-- <div class="modal fade" id="modalMision" tabindex="-1">
+    <!-- Modales Sobre Nosotros -->
+    <!-- <div class="modal fade" id="modalMision" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content bg-white backdrop-blur">
         <div class="modal-header border-0">
@@ -930,7 +1102,7 @@
     </div>
   </div> -->
 
-  <!-- <div class="modal fade" id="modalVision" tabindex="-1">
+    <!-- <div class="modal fade" id="modalVision" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content bg-white backdrop-blur">
         <div class="modal-header border-0">
@@ -961,125 +1133,125 @@
   </div> -->
 
 
-  <section id="acerca" class="seccion acerca-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 text-dark" data-aos="fade-up">Acerca de Q’orimarca</h2>
+    <section id="acerca" class="seccion acerca-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-dark" data-aos="fade-up">Acerca de Q’orimarca</h2>
 
-      <div class="row g-4">
+        <div class="row g-4">
 
-        <!-- Acerca de 1 -->
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="card acerca-card shadow-sm p-4 h-100">
-            <h5 class="card-title"><i class="fas fa-leaf text-success me-2"></i> Nacimiento del Proyecto</h5>
-            <p class="card-text">Q’orimara nació como una iniciativa para visibilizar la riqueza cultural y natural de
-              nuestra tierra.</p>
-            <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca1">Leer
-              más</button>
+          <!-- Acerca de 1 -->
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="card acerca-card shadow-sm p-4 h-100">
+              <h5 class="card-title"><i class="fas fa-leaf text-success me-2"></i> Nacimiento del Proyecto</h5>
+              <p class="card-text">Q’orimara nació como una iniciativa para visibilizar la riqueza cultural y natural de
+                nuestra tierra.</p>
+              <button class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca1">Leer
+                más</button>
+            </div>
           </div>
-        </div>
 
-        <!-- Acerca de 2 -->
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="card acerca-card shadow-sm p-4 h-100">
-            <h5 class="card-title"><i class="fas fa-globe-americas text-primary me-2"></i> Impacto Social</h5>
-            <p class="card-text">Buscamos promover la identidad y generar desarrollo económico a través del turismo
-              sostenible.</p>
-            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca2">Leer
-              más</button>
+          <!-- Acerca de 2 -->
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="card acerca-card shadow-sm p-4 h-100">
+              <h5 class="card-title"><i class="fas fa-globe-americas text-primary me-2"></i> Impacto Social</h5>
+              <p class="card-text">Buscamos promover la identidad y generar desarrollo económico a través del turismo
+                sostenible.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca2">Leer
+                más</button>
+            </div>
           </div>
-        </div>
 
-        <!-- Acerca de 3 -->
-        <div class="col-md-12" data-aos="fade-up">
-          <div class="card acerca-card shadow-sm p-4 mt-4">
-            <h5 class="card-title"><i class="fas fa-handshake text-warning me-2"></i> Colaboradores</h5>
-            <p class="card-text">Este proyecto está hecho gracias a la colaboración en conjunto del equipo de trabajo.
+          <!-- Acerca de 3 -->
+          <div class="col-md-12" data-aos="fade-up">
+            <div class="card acerca-card shadow-sm p-4 mt-4">
+              <h5 class="card-title"><i class="fas fa-handshake text-warning me-2"></i> Colaboradores</h5>
+              <p class="card-text">Este proyecto está hecho gracias a la colaboración en conjunto del equipo de trabajo.
+              </p>
+              <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca3">Leer
+                más</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modales Acerca de -->
+    <div class="modal fade" id="modalAcerca1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Nacimiento del Proyecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Desde el amor por nuestra tierra y cultura, surgió la idea de crear una plataforma que destaque nuestras
+              raíces y fortalezas como comunidad andina.</p>
+            <p>El proyecto Q'orimarka surge de una profunda conexión y amor por la provincia de Hualgayoc y su capital,
+              Bambamarca. Observamos la necesidad de una plataforma integral que no solo mostrara la belleza de esta
+              "Tierra de Oro" (significado quechua de Q'orimarka), sino que también facilitara su exploración a viajeros
+              de todo el mundo. Así, con la visión de ser el puente entre el visitante y la autenticidad andina, nació
+              esta iniciativa digital.
+            <p>Desde nuestros inicios, nos hemos dedicado a recopilar y organizar la información más relevante sobre
+              atractivos turísticos, festividades, gastronomía y servicios esenciales, con el fin de ofrecer una guía
+              completa y accesible. Q'orimarka es el resultado de la pasión por nuestra herencia y el deseo de
+              compartirla.
             </p>
-            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcerca3">Leer
-              más</button>
+
+            </p>
           </div>
         </div>
-
       </div>
     </div>
-  </section>
 
-  <!-- Modales Acerca de -->
-  <div class="modal fade" id="modalAcerca1" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Nacimiento del Proyecto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Desde el amor por nuestra tierra y cultura, surgió la idea de crear una plataforma que destaque nuestras
-            raíces y fortalezas como comunidad andina.</p>
-          <p>El proyecto Q'orimarka surge de una profunda conexión y amor por la provincia de Hualgayoc y su capital,
-            Bambamarca. Observamos la necesidad de una plataforma integral que no solo mostrara la belleza de esta
-            "Tierra de Oro" (significado quechua de Q'orimarka), sino que también facilitara su exploración a viajeros
-            de todo el mundo. Así, con la visión de ser el puente entre el visitante y la autenticidad andina, nació
-            esta iniciativa digital.
-          <p>Desde nuestros inicios, nos hemos dedicado a recopilar y organizar la información más relevante sobre
-            atractivos turísticos, festividades, gastronomía y servicios esenciales, con el fin de ofrecer una guía
-            completa y accesible. Q'orimarka es el resultado de la pasión por nuestra herencia y el deseo de
-            compartirla.
-          </p>
-
-          </p>
+    <div class="modal fade" id="modalAcerca2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Impacto Social</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Además de atraer visitantes, buscamos que Q’orimarca se convierta en una herramienta de transformación y
+              orgullo para sus habitantes.</p>
+            <p>En Q'orimarca, creemos firmemente que el turismo debe ser una fuerza para el bien. Por ello, nuestro
+              compromiso va más allá de la información; buscamos generar un impacto social positivo en Bambamarca y sus
+              comunidades. Promovemos activamente el consumo de productos y servicios locales, desde la artesanía
+              tradicional hasta la gastronomía auténtica y los pequeños alojamientos familiares.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="modalAcerca2" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Impacto Social</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Además de atraer visitantes, buscamos que Q’orimarca se convierta en una herramienta de transformación y
-            orgullo para sus habitantes.</p>
-          <p>En Q'orimarca, creemos firmemente que el turismo debe ser una fuerza para el bien. Por ello, nuestro
-            compromiso va más allá de la información; buscamos generar un impacto social positivo en Bambamarca y sus
-            comunidades. Promovemos activamente el consumo de productos y servicios locales, desde la artesanía
-            tradicional hasta la gastronomía auténtica y los pequeños alojamientos familiares.</p>
+    <div class="modal fade" id="modalAcerca3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-light backdrop-blur">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Colaboradores</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/colaboradores.jpeg" class="card-img-top img-colaboradores" alt="Plato tipico">
+            <p>Este proyecto está construido en base al trabajo colectivo y la participación activa de todos los
+              integrantes del grupo, los cuales se listan a continuación:</p>
+            <p>Carranza Tantalean Carlos Eduardo</p>
+            <p>Cruzado Tirado Jherardo Ivan</p>
+            <p>Guevara Marín Cleider</p>
+            <p>Silva Rojas Cielito Mayumi Melissa</p>
+            <p>Silva Suarez Daylin Zhamikay</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="modalAcerca3" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content bg-light backdrop-blur">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Colaboradores</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <img src="img/colaboradores.jpeg" class="card-img-top img-colaboradores" alt="Plato tipico">
-          <p>Este proyecto está construido en base al trabajo colectivo y la participación activa de todos los
-            integrantes del grupo, los cuales se listan a continuación:</p>
-          <p>Carranza Tantalean Carlos Eduardo</p>
-          <p>Cruzado Tirado Jherardo Ivan</p>
-          <p>Guevara Marín Cleider</p>
-          <p>Silva Rojas Cielito Mayumi Melissa</p>
-          <p>Silva Suarez Daylin Zhamikay</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Seccion de Contactanos-->
-  <!-- <section id="contacto" class="seccion contacto-section py-5">
+    <!--Seccion de Contactanos-->
+    <!-- <section id="contacto" class="seccion contacto-section py-5">
     <div class="container">
       <h2 class="text-center mb-5" data-aos="fade-down">Contáctanos</h2>
       <div class="row g-4"> -->
 
-        <!-- Info de contacto -->
-        <!-- <div class="col-md-4" data-aos="fade-right">
+    <!-- Info de contacto -->
+    <!-- <div class="col-md-4" data-aos="fade-right">
           <div class="card contacto-card text-center p-4 shadow">
             <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
             <h5 class="mb-1">Ubicación</h5>
@@ -1097,8 +1269,8 @@
           </div>
         </div> -->
 
-        <!-- Formulario -->
-        <!-- <div class="col-md-8" data-aos="fade-left">
+    <!-- Formulario -->
+    <!-- <div class="col-md-8" data-aos="fade-left">
           <form class="p-4 shadow bg-white rounded" action="enviar.php" method="POST">
             <div class="row g-3">
               <div class="col-md-6">
@@ -1120,119 +1292,144 @@
           </form>
         </div> -->
 
-      <!-- </div>
+    <!-- </div>
     </div> -->
-  </section>
+    </section>
 
 
 
-<!-- SECCIÓN CONTÁCTANOS REDISEÑADA -->
-<section id="contacto" class="seccion contact-section-v2 py-5">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-down">Contáctanos</h2>
-    <div class="row g-4 align-items-stretch">
+    <!-- SECCIÓN CONTÁCTANOS REDISEÑADA -->
+    <section id="contacto" class="seccion contact-section-v2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-down">Contáctanos</h2>
+        <div class="row g-4 align-items-stretch">
 
-      <!-- Info de contacto renovada -->
-<div class="col-lg-5" data-aos="fade-right">
-  <div class="info-box-v2 p-4 shadow-sm rounded-4 h-100 bg-white d-flex flex-column justify-content-between">
+          <!-- Info de contacto renovada -->
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="info-box-v2 p-4 shadow-sm rounded-4 h-100 bg-white d-flex flex-column justify-content-between">
 
-    <!-- Ubicación -->
-    <div class="info-card-v2 d-flex align-items-start mb-4 animate__animated animate__fadeInLeft">
-      <div class="icon-box bg-danger text-white me-3">
-        <i class="fas fa-map-marker-alt fa-lg"></i>
+              <!-- Ubicación -->
+              <div class="info-card-v2 d-flex align-items-start mb-4 animate__animated animate__fadeInLeft">
+                <div class="icon-box bg-danger text-white me-3">
+                  <i class="fas fa-map-marker-alt fa-lg"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Ubicación</h6>
+                  <p class="mb-0">Q’orimarca, Bambamarca, Perú</p>
+                </div>
+              </div>
+
+              <!-- Teléfono -->
+              <div
+                class="info-card-v2 d-flex align-items-start mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                <div class="icon-box bg-success text-white me-3">
+                  <i class="fas fa-phone fa-lg"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Teléfono</h6>
+                  <p class="mb-0">+51 987 654 321</p>
+                </div>
+              </div>
+
+              <!-- Correo -->
+              <div
+                class="info-card-v2 d-flex align-items-start animate__animated animate__fadeInLeft animate__delay-2s">
+                <div class="icon-box bg-primary text-white me-3">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Correo</h6>
+                  <p class="mb-0">contacto@qorimarca.pe</p>
+                </div>
+              </div>
+
+              <!-- Mapa -->
+              <div class="map-wrapper rounded-4 overflow-hidden mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.539848800237!2d-78.51791772592402!3d-6.757837893254871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b253b17124b28d%3A0x77e7f5361263a0a5!2sBambamarca!5e0!3m2!1ses!2spe!4v1721323460123!5m2!1ses!2spe"
+                  width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- COLUMNA DERECHA: Formulario -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="form-box p-4 shadow-sm bg-white rounded-4 h-100">
+              <form id="formulario-contacto" class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" class="form-control contact-v2-input" name="nombre" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="correo" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control contact-v2-input" name="correo" required>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control contact-v2-textarea" name="mensaje" rows="6" required></textarea>
+                </div>
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-contact-v2 px-5">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div>
-        <h6 class="fw-bold mb-1">Ubicación</h6>
-        <p class="mb-0">Q’orimarca, Bambamarca, Perú</p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 bg-dark text-white mt-5">
+      <p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61578766763788"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
-    </div>
+      </p>
+      <p class="mb-0">© 2025 Q’orimarca Web. Todos los derechos reservados.</p>
+    </footer>
 
-    <!-- Teléfono -->
-    <div class="info-card-v2 d-flex align-items-start mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
-      <div class="icon-box bg-success text-white me-3">
-        <i class="fas fa-phone fa-lg"></i>
-      </div>
-      <div>
-        <h6 class="fw-bold mb-1">Teléfono</h6>
-        <p class="mb-0">+51 987 654 321</p>
-      </div>
-    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>AOS.init();</script>
 
-    <!-- Correo -->
-    <div class="info-card-v2 d-flex align-items-start animate__animated animate__fadeInLeft animate__delay-2s">
-      <div class="icon-box bg-primary text-white me-3">
-        <i class="fas fa-envelope fa-lg"></i>
-      </div>
-      <div>
-        <h6 class="fw-bold mb-1">Correo</h6>
-        <p class="mb-0">contacto@qorimarca.pe</p>
-      </div>
-    </div>
-
-    <!-- Mapa -->
-    <div class="map-wrapper rounded-4 overflow-hidden mt-4">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.539848800237!2d-78.51791772592402!3d-6.757837893254871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b253b17124b28d%3A0x77e7f5361263a0a5!2sBambamarca!5e0!3m2!1ses!2spe!4v1721323460123!5m2!1ses!2spe"
-        width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-  </div>
-</div>
-
-   <!-- COLUMNA DERECHA: Formulario -->
-<div class="col-lg-7" data-aos="fade-left">
-  <div class="form-box p-4 shadow-sm bg-white rounded-4 h-100">
-    <form id="formulario-contacto" class="row g-3">
-      <div class="col-md-6">
-        <label for="nombre" class="form-label">Nombre completo</label>
-        <input type="text" class="form-control contact-v2-input" name="nombre" required>
-      </div>
-      <div class="col-md-6">
-        <label for="correo" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control contact-v2-input" name="correo" required>
-      </div>
-      <div class="col-12">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control contact-v2-textarea" name="mensaje" rows="6" required></textarea>
-      </div>
-      <div class="col-12 text-end">
-        <button type="submit" class="btn btn-contact-v2 px-5">Enviar</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
+    <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
 
+    <script>
+      // 🟢 MOSTRAR EL POPUP AUTOMÁTICAMENTE AL CARGAR LA PÁGINA
+      window.onload = function () {
+        const popup = document.getElementById('popupOferta');
 
+        // Mostrar el popup
+        popup.classList.add('active');
 
-  <!-- FOOTER -->
-  <footer class="text-center py-4 bg-dark text-white mt-5">
-    <p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-    </p>
-    <p class="mb-0">© 2025 Q’orimarca Web. Todos los derechos reservados.</p>
-  </footer>
+        // ⏱️ OCULTAR AUTOMÁTICAMENTE DESPUÉS DE 15 SEGUNDOS
+        setTimeout(() => {
+          popup.classList.remove('active');
+        }, 15000); // 15000 milisegundos = 15 segundos
+      };
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script>AOS.init();</script>
+      // ❌ CERRAR EL POPUP AL DAR CLICK EN LA X
+      function cerrarPopup() {
+        const popup = document.getElementById('popupOferta');
+        popup.classList.remove('active');
+      }
+    </script>
 
-  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
 </body>
+
+
 
 </html>
